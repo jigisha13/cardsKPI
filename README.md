@@ -1,4 +1,6 @@
 # cardsKPI
+>This plug & play KPI cards are the easiest way to visualize and demonstrate Key Performance Indicators of data. They are ready to use KPIs in Card format written in jquery. These cards can be readily placed on your Dashboard web pages. Its simple implementation details are mentioned in this document
+
 # KPI Cards for Dashboards
 
 ![Image of Yaktocat](https://img.techpowerup.org/200819/demo-1.png)
