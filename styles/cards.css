@@ -1,0 +1,181 @@
+/*/////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                          //
+//-------------------------------Xoriant License--------------------------------------------//
+//                                                                                          //
+//====================Copyright (c) [2020] [Xoriant Solutions Pvt Ltd]======================//
+//                                                                                          // 
+//       Permission is hereby granted, free of charge, to any person obtaining a copy       //
+//       of this software and associated documentation files (the "Software"), to deal      //
+//       in the Software without restriction, including without limitation the rights       //
+//       to use, copy, modify, merge, publish, distribute, sublicense, and/or sell          //
+//       copies of the Software, and to permit persons to whom the Software is              //
+//       furnished to do so, subject to the following conditions:                           //
+//                                                                                          // 
+//       The above copyright notice and this permission notice shall be included in all     //
+//       copies or substantial portions of the Software.                                    //
+//                                                                                          //
+//       THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR         //
+//       IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,           //
+//       FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE        //
+//       AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER             //
+//       LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,      //
+//       OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE      //
+//       SOFTWARE.                                                                          //
+//                                                                                          //
+/////////////////////////////////////////////////////////////////////////////////////////////*/
+
+:root {
+    --card1-background-from: #1c42e2;
+    --card1-background-to: #65c4ff;
+    --card2-background-from: #0b9967;
+    --card2-background-to: #5fd43e;
+    --card3-background-from: #fd8540;
+    --card3-background-to: #ffcd48;
+
+    --text-color: #FFFFFF;
+
+    --text-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+#wrapper{
+    position: absolute;
+    display: flex;
+    top: 5% ;
+    left: 15%  ;
+    width:1080px;
+    height:350px;
+    border-radius: 16px;
+}
+.card{
+    width: 310px;
+    height: 155px;
+    background-color: var(--card3-background-from);
+    background-image: linear-gradient(180deg, var(--card3-background-from) 0%, var(--card3-background-to) 79%);    
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-align: center;
+    /* popover */
+    -webkit-transition: 1s;
+          transition: 1s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+.card:hover{
+    height: 350px;
+    width: 310px;
+    
+    
+}
+
+#card1{
+    background-color: var(--card1-background-from);
+    background-image: linear-gradient(180deg, var(--card1-background-from) 0%, var(--card1-background-to) 89%);
+
+}
+#card2{
+background-color: var(--card2-background-from);
+background-image: linear-gradient(180deg, var(--card2-background-from) 0%, var(--card2-background-to) 94%);
+
+}
+
+.sel{
+    margin-left: 200px;
+    margin-top: 10px;
+    width:95px;
+    background: rgba(216, 216, 216, 0.4);
+    border-radius: 5px;
+    border:none;
+}
+
+#counttext1, #counttext2, #counttext3{
+    font-size: 45px;
+    font-family: var(--text-font-family);
+    font-style: normal;
+    font-weight: bold;
+    color: var(--text-color);
+    line-height:65px;
+   /* margin-left: 35%; */
+   display: block;
+}
+#methodtext1, #methodtext2, #methodtext3{
+    font-family: var(--text-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+/* identical to box height */
+    color: var(--text-color);
+    /* margin-left: 30%; */
+    display: block;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid var(--text-color);
+    display: none;
+}
+
+#name{
+    display: block;
+    font-family: var(--text-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--text-color);
+}
+#count{
+    display: block;
+    font-family: var(--text-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.displaytext{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:10px;
+    display: inline-block;
+    text-align: center;
+}
+.details1{
+    display: none;
+    -webkit-transition-delay: 5s;
+    transition-delay: 5s;
+}
+.details2{
+    display: none;
+    -webkit-transition-delay: 5s;
+    transition-delay: 5s;
+}
+.details3{
+    display: none;
+    -webkit-transition-delay: 5s;
+    transition-delay: 5s;
+}
+.card:hover hr{
+    display: block;
+}
+
+.card:hover .details1{
+    display: inline-block;
+}
+.card:hover .details2{
+    display: inline-block;
+}
+.card:hover .details3{
+    display: inline-block;
+}
+.heading{
+    margin-top: 10px;
+    display:block;
+    font-family: var(--text-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--text-color);
+}
