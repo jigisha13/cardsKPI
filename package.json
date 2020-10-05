@@ -1,0 +1,26 @@
+{
+  "name": "cards-key-point-indicator",
+  "version": "1.0.0",
+  "description": "This plug & play KPI cards are the easiest way to visualize and demonstrate Key Performance Indicators of data. They are ready to use KPIs in Card format written in jquery. These cards can be readily placed on your Dashboard web pages. ",
+  "main": "jquery.dynamic_kpi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jigisha13/cardsKPI.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "cards",
+    "kpi",
+    "numeric-kpi"
+  ],
+  "author": "Jigisha Bhole",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jigisha13/cardsKPI/issues"
+  },
+  "homepage": "https://github.com/jigisha13/cardsKPI#readme"
+}
